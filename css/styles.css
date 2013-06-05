@@ -1,5 +1,5 @@
 body, html {
-	background: yellow;
+	background: #fff772;
 	height: 100%;
 	position: relative;
 }
@@ -8,14 +8,29 @@ body, html {
 #homeimg {
 	width: 90%;
 	height: 100%;
-	max-width: 2000px;
-	min-height: 500px;;	
+	min-height: 500px;
 }
 
 #homeimg  img{
 	width: 100%;
-	float: left;
+	max-width: 700px;
+	position:absolute;
+	bottom: 0;
+	left: 0;
+}
+/*social*/
+ #social li {
+	display: block;
+	float: left; 
+	width: 5%;
+ }
 
+#social ul {
+	margin-top: 2%;	
+}
+
+#social img {
+	width: 170%;	
 }
 
 /*nav*/
@@ -24,23 +39,59 @@ nav {
 	position: absolute;
 	width: 15%;
 	top: 5%;
-	right: 5%;
-	vertical-align: bottom;
+	left: 75%;
+	z-index: 10;
 }
 
 nav img {
 	width: 100%;	
 }
 
+nav li:nth-child(1):hover {
+	background: url('../img/home-icon.png') no-repeat;
+	padding-left: 40%;
+	margin-left: -40%;
+}
+
+nav li:nth-child(2):hover {
+	background: url('../img/work-icon.png') no-repeat;
+	padding-left: 60%;
+	margin-left: -60%;
+}
+
+nav li:nth-child(3):hover {
+	background: url('../img/sarah-icon.png') no-repeat;
+	padding-left: 63%;
+	margin-left: -63%;
+}
+
+nav li:nth-child(4):hover {
+	background: url('../img/contact-icon.png') no-repeat;
+	padding-left: 43%;
+	margin-left: -43%;
+}
+
 nav li {
 	text-align: right;
 }
 
-nav a:hover {
-	background: url('img/home-button.png');
-	margin-left: -50px;
+a {
+	display: block;	
+	height: 100%;
+	width: 100%;
 }
 
+#bio {
+	width: 500px;
+	position: absolute;
+	left: 32%;	
+	top: 10%;
+}
+
+#bio p {
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 2em;
+}
 
 
 
