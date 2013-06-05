@@ -84,7 +84,7 @@ a {
 #bio {
 	width: 500px;
 	position: absolute;
-	left: 32%;	
+	left: 28%;	
 	top: 10%;
 }
 
@@ -95,5 +95,93 @@ a {
 
 
 
+/*lightbox*/
+ 
+ /*tumbnail*/
+ 
+ main ul {
+	padding: 0; 
+ }
+ 
+ main li {
+	float: left;
+	list-style: none;
+	margin: 10% 1% 10% 1%;
+	position: relative;
 
+}
+
+main a, 
+main a img {
+	display: block;
+}
+
+main li > a {
+    height: 200px;
+    position: relative;
+   	width: 200px;
+}
+
+main {
+	position:absolute;
+	width: 65%;
+	left: 5%;
+	top: 10%;
+	z-index: 11;
+}
+
+/*Overlay*/
+
+/* Hide lightbox */
+.lightbox {
+	background: rgba(0, 0, 0, .5);
+    height: 0px;
+    overflow: hidden;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+	width: 0px;
+	z-index: 99;
+}
+
+.lightbox img {
+	max-height: 100%;
+    position: relative;
+    -webkit-transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
+}
+
+main li a {
+	color: #FFF;
+	font-family: 'Reenie Beanie', cursive;
+	font-size: 2em;
+	text-decoration: none;
+	text-transform: uppercase;	
+	margin: 15px;
+}
+.lightbox:target {
+    height: auto;
+    bottom: 0px;
+    right: 0px;
+    padding: 80px 100px 120px 100px;
+	width: auto;
+}
+
+
+
+/*************************** 
+Keyframe Animations 
+/***************************/
+
+.lightbox:target img {
+	-webkit-animation: fadein .8s ease-in;
+    animation: fadein .8s ease-in;
+}
+
+@-webkit-keyframes fadein {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+ 
 
