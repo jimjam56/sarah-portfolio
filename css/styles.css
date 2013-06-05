@@ -1,0 +1,48 @@
+body, html {
+	background: yellow;
+	height: 100%;
+	position: relative;
+}
+
+
+#homeimg {
+	width: 90%;
+	height: 100%;
+	max-width: 2000px;
+	min-height: 500px;;	
+}
+
+#homeimg  img{
+	width: 100%;
+	float: left;
+
+}
+
+/*nav*/
+
+nav {
+	position: absolute;
+	width: 15%;
+	top: 5%;
+	right: 5%;
+	vertical-align: bottom;
+}
+
+nav img {
+	width: 100%;	
+}
+
+nav li {
+	text-align: right;
+}
+
+nav a:hover {
+	background: url('img/home-button.png');
+	margin-left: -50px;
+}
+
+
+
+
+
+
